@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    outline:none;
+    text-transform:capitalize ;
+    border:none;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(.43,1.1,.62,1.08)
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+width: 1rem;
+}
+html::-webkit-scrollbar-track{
+background-color: var(--white);
+}
+html::-webkit-scrollbar-thumb{
+    background-color: var(--light-white);
+    }
+section{
+        padding:1rem 2%;
+    }
+    .heading {
+        text-align: center;
+        font-size: 35px;
+        font-weight: bold;
+        color: #333;
+        padding: 1rem;
+        margin: 2rem 0;
+        background: rgba(255, 102, 51, 0.05);
+    }
+    .heading span{
+        color: #bd4f2b;
+        font-weight: bold;
+        font-size: 35px;
+    }
+.products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.products .box-container .box{
+    flex: 1 1 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    border-radius: 5px;
+    border: 10px solid rgba(0,0,0,.1);
+    position: relative;
+}
+.products .box-container .box .discount {
+    position: absolute;
+    top: 10px; left: 10px;
+    padding: 7px 10px;
+    font-size: 20px;
+    color: pink;
+    z-index: 1000;
+    background: rgba(0,0,0,.1);
+    
+}
+.products .box-container .box .image{
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+    overflow: hidden;
+}
+.products .box-container .box .image img{
+    height: 250px;
+}
+.products .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+.products .box-container .box .image .icon{
+    position: absolute;
+    bottom: 0 ; right: 0;left: 0;
+    display: flex;
+}
+.products .box-container .box .image .icon a{
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    width: 50%;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+}
+.products .box-container .box .image .icon a:hover{
+    color: #bd4f2b;
+}
+.products .box-container .box .image .icon .cart-btn{
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    width: 100%;
+}
+.products .box-container .box  .content{
+    padding: 20px;
+    text-align: center;
+}
+.products .box-container .box  .content h3{
+    font-size: 20px;
+    color: #333;
+}
+.products .box-container .box  .content .price{
+    font-size: 20px;
+    color: #bd4f2b;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+.products .box-container .box  .content .price span{
+    text-decoration: line-through;
+    padding-left: 8px;
+}

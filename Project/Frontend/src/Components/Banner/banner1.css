@@ -1,0 +1,63 @@
+
+.cat_slider_Main .slick-slide{
+    padding-right: 10px;
+}
+.cat_slider_Main .item{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cat_slider_Main .item .info{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Chiều rộng của info sẽ chiếm toàn bộ item */
+    height: 100%; /* Đặt chiều cao cố định cho khung ảnh */
+    overflow: hidden; /* Ẩn phần hình ảnh vượt quá khung */
+    display: flex; /* Căn giữa nếu cần */
+    justify-content: center;
+    align-items: center;
+    position: hidden;
+}
+/* Đảm bảo container (info) có kích thước cố định */
+
+  .info img {
+    width: 100%; /* Hình ảnh sẽ giãn toàn bộ chiều rộng khung */
+    height: 100%; /* Hình ảnh sẽ giãn toàn bộ chiều cao khung */
+    object-fit: cover; /* Cắt và căn chỉnh hình ảnh sao cho vừa khung mà không méo */
+    border-radius: 10px; /* Tùy chọn, nếu bạn muốn bo góc */
+  }
+  .productName {
+    position: absolute; /* Đặt chữ đè lên ảnh */
+  top: 90%; /* Căn theo trục dọc */
+  left: 50%; /* Căn theo trục ngang */
+  transform: translate(-50%, -50%); /* Dịch chữ vào đúng tâm */
+  color: #222 ;/* Màu chữ */
+  font-size: 20px; /* Kích thước chữ */
+  font-weight: bold; /* Đậm chữ */
+  z-index: 10; /* Đảm bảo chữ nằm trên ảnh */
+  }
+ .bottom-viewall{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    
+  }
+   .sport-card-button{
+    position: absolute;
+    background: white;
+    bottom: 30px;
+    left: 20px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .sport-card-button:hover{
+    background-color: rgba(255,255,255,0.6)
+  }

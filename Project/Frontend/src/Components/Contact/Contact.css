@@ -1,0 +1,35 @@
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+.contact .row form{
+    flex: 1 1 400px;
+    padding:20px 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    border: 1px solid rgba(0,0,0,.1);
+    background: #fff;
+    border-radius: 5px;
+}
+.contact .row .image{
+    flex: 1 1 350px;
+}
+.contact .row .image img{
+    flex: 1 1 350px;
+    width: 95%;
+}
+.contact .row form .box{
+    padding: 10px;
+    font-size: 17px;
+    color:#333 ;
+    text-transform:none ;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+    margin: 7px 0;
+    width: 100%;
+}
+.contact .row form .box:focus{
+    border-color: pink ;
+    resize: none;
+}

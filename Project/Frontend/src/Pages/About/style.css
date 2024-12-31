@@ -1,0 +1,92 @@
+/* Tổng quan */
+body {
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.about-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #222;
+    letter-spacing: 3px;
+}
+
+.about-tagline {
+    font-size: 1.2rem;
+    color: #222;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+/* Nội dung */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-section {
+   
+    padding: 20px;
+    border-radius: 10px;
+   
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section:hover {
+    transform: scale(1.02);
+   
+}
+
+.about-section h2 {
+    font-size: 4rem;
+    color: #bd4f2b;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    font-size: 2rem;
+    line-height: 1.6;
+    color: #222;
+}
+
+/* Hình ảnh */
+.about-image {
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-section p {
+        font-size: 0.9rem;
+    }
+}

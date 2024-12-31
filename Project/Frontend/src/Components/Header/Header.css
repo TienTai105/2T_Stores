@@ -1,0 +1,204 @@
+:root {
+    --peru: #cd9452;
+    --black: #222;
+    --white: #fff;
+    --light-black: #666;
+    --light-white: #ccc;
+    --light-bg: #f5f5f5;
+    --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    --dark-bg: rgba(0, 0, 0, 0.7);
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    outline: none;
+    text-transform: capitalize;
+    border: none;
+    transition: all 0.4s cubic-bezier(0.43, 1.1, 0.62, 1.08);
+}
+
+/* Dropdown Styles */
+.header .dropdown {
+    position: relative;
+}
+
+.header .dropdown-content {
+    position: absolute;
+    top: 4rem; /* Khoảng cách từ nút */
+    left: 0;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    min-width: 18rem;
+}
+
+.header .dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.header .dropdown-content a {
+    padding: rem 2rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.header .dropdown-content a:hover {
+    color: var(--peru);
+}
+
+/* Button Styles */
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    background: #333;
+    color: var(--white);
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding: 1rem 2.5rem;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    color: #222;
+}
+
+/* Header */
+.header {
+    padding: 2rem 10%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo {
+    font-size: 3rem;
+    color: var(--black);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.header .logo span {
+    color: var(--peru);
+}
+
+.header .navbar a {
+    font-size: 1.6rem;
+    margin-left: 2rem;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.header .navbar a:hover {
+    color: var(--peru);
+}
+
+.header .icons a {
+    font-size: 1.8rem;
+    color: var(--black);
+    margin-left: 1.5rem;
+    text-decoration: none;
+}
+
+.header #toggler {
+    display: none;
+}
+
+.header .fa-bars {
+    font-size: 3rem;
+    color: var(--black);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border: var(--border);
+}
+.header .icons {
+    display: flex; /* Đảm bảo các phần tử con xếp theo hàng ngang */
+    align-items: center; /* Căn giữa theo trục dọc */
+    gap: 1rem; /* Khoảng cách giữa các phần tử */
+}
+
+.header .icons .icon {
+    font-size: 2rem;
+    color: var(--black);
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.header .icons .icon:hover {
+    color: var(--peru);
+    transform: scale(1.1);
+}
+
+.header .icons .search-box {
+    display: flex; /* Đặt ô tìm kiếm và biểu tượng theo hàng ngang */
+    align-items: center;
+    border: var(--border);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background: var(--light-bg);
+}
+
+.header .icons .search-box input {
+    border: none;
+    outline: none;
+    margin-left: 0.5rem;
+    font-size: 1.4rem;
+    color: var(--black);
+    background: none;
+}
+.header .icons .cart{
+    font-size: 10px;
+}
+.header .icons .cart {
+    display: inline-flex;
+    align-items: center; /* Căn giữa biểu tượng và số lượng */
+    font-size: 2rem; /* Đồng bộ kích thước với các biểu tượng khác */
+    color: var(--black);
+    cursor: pointer;
+    position: relative; /* Để đặt số lượng sản phẩm */
+    padding-bottom: 6px;
+}
+
+.header .icons .cart span {
+    position: absolute;
+    top: 0px; /* Điều chỉnh vị trí số lượng */
+    right: -8px; /* Điều chỉnh khoảng cách từ biểu tượng */
+    background: var(--peru);
+    color: var(--white);
+    font-size: 1rem; /* Kích thước chữ số lượng */
+    font-weight: bold;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .icons .user_icon{
+    font-size: 10px;
+}
+.header .icons .user_icon {
+    display: inline-flex;
+    align-items: center; /* Căn giữa biểu tượng và số lượng */
+    font-size: 4rem; /* Đồng bộ kích thước với các biểu tượng khác */
+    color: var(--black);
+    cursor: pointer;
+    position: relative; /* Để đặt số lượng sản phẩm */
+    padding-bottom: 6px;
+}
